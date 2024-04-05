@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+
+body {
+    background-color: #8C6650;
+}
+
+.section {
+    max-width: 1620px;
+    margin: 0 auto;
+}
+
+.py-100 {
+    padding: 100px 0;
+}
+
+@font-face {
+    font-family: 'Vetrino';
+    src: url(../fonts/Vetrino.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'TTTravels';
+    src: url(../fonts/TTTravels-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'TTTravels';
+    src: url(../fonts/TTTravels-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Literature-Decor';
+    src: url(../fonts/Literature-Decor.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-Medium.otf);
+    font-weight: 500;
+}
+
+/* header start */
+.header-block {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 700px;
+    padding: 42px 0;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: #ffffff;
+}
+
+.header-text h2 {
+    font-size: 44px;
+    font-family: 'Vetrino';
+    font-weight: 400;
+}
+
+.header-text p {
+    font-size: 24px;
+    font-family: 'TTTravels';
+    font-weight: 500;
+}
+
+.header-text-mobile {
+    display: none;
+}
+
+.header-nav {
+    display: none;
+}
+
+.header-icons-burger {
+    display: none;
+    position: fixed;
+    right: 30px;
+    top: 50px;
+}
+
+#burger,
+[for=burger] {
+    display: none;
+}
+
+/* header end */
+
+
+.panel-catalog {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.nav {
+    background-color: #ffffff;
+    width: 481px;
+    height: 1150px;
+    padding: 42px 116px;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.perconal-data {
+    display: flex;
+    gap: 15px;
+    font-size: 22px;
+    font-family: 'TTTravels';
+    font-weight: 500;
+    color: #444444;
+}
+
+.tovar,
+.add-tovar,
+.exit {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tovar img,
+.add-tovar img,
+.exit img {
+    width: 25px;
+}
+
+.tovar p,
+.add-tovar p,
+.exit p {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'TTTravels';
+    text-transform: uppercase;
+    color: #313131;
+}
+
+.tovar {
+    margin-top: 42px;
+}
+
+.add-tovar {
+    margin-top: 20px;
+}
+
+.exit {
+    margin-top: 70px;
+}
+
+.catalog-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px 28px;
+}
+
+.attr-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0 15px;
+}
+
+.attr-text h3 {
+    font-size: 17px;
+    font-family: 'Inter';
+    font-weight: 400;
+    color: #5B331C;
+    text-transform: uppercase;
+}
+
+.attr-text p {
+    font-size: 20px;
+    font-family: 'TTTravels';
+    font-weight: 500;
+    color: #454545;
+    text-transform: uppercase;
+}
+
+.card img {
+    width: 300px;
+    height: 327px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+}
+
+.card .icons .edit {
+    width: 32px;
+    height: 32px;
+}
+
+.card .icons .delete {
+    width: 22px;
+    height: 25px;
+    margin: 7px;
+}
+
+.tovar-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.tovar-text p {
+    color: #ffffff;
+}
+
+
+/* add_tovar.html start */
+
+.forma-block {
+    background-color: #ffffff;
+    width: 700px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input {
+    width: 350px;
+    padding: 15px 20px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid #6f68639a;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #444444;
+}
+
+form input::placeholder:focus {
+    color: #444444;
+}
+
+form .add-foto {
+    border: none;
+}
+
+.btn-submit {
+    background-color: #414141;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-submit:hover {
+    background-color: #242424;
+}
+
+/* add_tovar.html start */
+
+@media(max-width: 440px) {
+    .header-block {
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        padding: 40px;
+    }
+
+    .panel-catalog .nav {
+        display: none;
+    }
+
+    [for=burger] {
+        display: block;
+        right: 20px;
+        top: 10px;
+    }
+
+    [for=burger]::before {
+        content: '≡';
+        font-size: 58px;
+        color: #ffffff;
+        z-index: 1000;
+        position: fixed;
+        top: 40px;
+        left: 30px;
+    }
+
+    .header-logo img {
+        width: 60px;
+    }
+
+    .header-icons {
+        display: none;
+    }
+
+    .header-icons-burger {
+        display: flex;
+        gap: 15px;
+
+    }
+
+    .tovar-img, .add-tovar-img, .exit-img {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+
+    .tovar-img img, .add-tovar-img img, .exit-img img {
+        width: 35px;
+    }
+
+    .header-nav {
+        font-family: 'Inter';
+        position: fixed;
+        left: 0;
+        top: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 100px 0 0 30px;
+        gap: 30px;
+        width: 100%;
+        height: 932px;
+        background-color: #8C6650;
+        display: none;
+        z-index: 1000;
+        padding-top: 150px;
+    }
+
+    .header-nav a {
+        font-size: 24px;
+        color: #ffffff;
+    }
+
+    #burger:checked+[for=burger]+.header-nav {
+        display: flex;
+        animation: show 0.5s;
+    }
+
+    #burger:checked+[for=burger]::before {
+        content: '⨂';
+        font-size: 40px;
+        color: #ffffff;
+        z-index: 10000;
+    }
+
+    .header-logo {
+        margin: 0;
+    }
+
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .header-text {
+        display: none;
+    }
+
+    .header-text-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        color: #ffffff;
+        margin-bottom: 40px;
+    }
+    
+    .header-text-mobile h2 {
+        text-align: center;
+        font-size: 28px;
+        font-family: 'Vetrino';
+        font-weight: 400;
+    }
+    
+    .header-text-mobile p {
+        font-size: 24px;
+        font-family: 'TTTravels';
+        font-weight: 500;
+    }
+
+    .catalog-cards {
+        margin: 0 20px 40px;
+    }
+
+    .card {
+        width: 380px;
+    }
+
+    .card img {
+        width: 324px;
+    }
+
+    .card .icons .delete {
+        width: 22px;
+        height: 25px;
+        margin: 5px 10px 7px;
+    }
+
+    .forma-block {
+        background-color: #ffffff;
+        width: 380px;
+        padding: 35px;
+        display: flex;
+    }
+
+    .forma-add {
+        margin: 0 20px 40px;
+    }
+}
